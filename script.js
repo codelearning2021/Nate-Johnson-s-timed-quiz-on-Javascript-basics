@@ -32,6 +32,9 @@ const Questions = [{
 
 ]
 
+// Set score variable
+myScore = 0;
+
 // Set start
 var start = true;
 
@@ -114,9 +117,11 @@ function iterate(id) {
         if (selected == "true") {
             result[0].innerHTML = "True";
             result[0].style.color = "green";
+            myScore++;
         } else {
             result[0].innerHTML = "False";
             result[0].style.color = "red";
+            sec -= 5;
         }
     })
 }
@@ -126,7 +131,7 @@ if (start) {
 }
 
 // Next button and method
-const next = document.getElementsByClassName('next')[0];
+var next = document.getElementsByClassName('next')[0];
 var id = 0;
 
 next.addEventListener("click", () => {
@@ -148,10 +153,15 @@ function myTimer() {
     document.getElementById('timer').innerHTML = sec + " seconds left";
     sec--;
     if (sec < 0) {
-        clearInterval(time);
+        clearInterval(time); ``
         var initials = prompt("Time out!! Type your initials");
-        document.getElementById("initialScore").innerHTML =
-            "Initials: " + initials + " Score: " + ;
-
+        if (initials == null) {
+            document.getElementById("initialScore").innerHTML =
+                "Initials: none" + " Score: " + myScore;
+        }
+        else {
+            document.getElementById("initialScore").innerHTML =
+                "Initials: " + initials + " Score: " + myScore;
+        }
     }
 }
