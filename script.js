@@ -1,31 +1,31 @@
 // Questions will be asked
 const Questions = [{
     id: 0,
-    q: "What is capital of India?",
-    a: [{ text: "gandhinagar", isCorrect: false },
-    { text: "Surat", isCorrect: false },
-    { text: "Delhi", isCorrect: true },
-    { text: "mumbai", isCorrect: false }
+    q: "Which is not a type of variable in Javascript?",
+    a: [{ text: "const", isCorrect: false },
+    { text: "var", isCorrect: false },
+    { text: "attribute", isCorrect: true },
+    { text: "let", isCorrect: false }
     ]
 
 },
 {
     id: 1,
-    q: "What is the capital of Thailand?",
-    a: [{ text: "Lampang", isCorrect: false, isSelected: false },
-    { text: "phuket", isCorrect: false },
-    { text: "Ayutthaya", isCorrect: false },
-    { text: "Bangkok", isCorrect: true }
+    q: "How do you call a function?",
+    a: [{ text: "Use ==", isCorrect: false, isSelected: false },
+    { text: "Use ;", isCorrect: false },
+    { text: "Should loud enough for it to hear", isCorrect: false },
+    { text: "Use ()", isCorrect: true }
     ]
 
 },
 {
     id: 2,
-    q: "What is the capital of Gujarat",
-    a: [{ text: "surat", isCorrect: false },
-    { text: "vadodara", isCorrect: false },
-    { text: "gandhinagar", isCorrect: true },
-    { text: "rajkot", isCorrect: false }
+    q: "What html element do you need to add a Javascript file",
+    a: [{ text: "<style src=>", isCorrect: false },
+    { text: "<div class=>", isCorrect: false },
+    { text: "<script src=>", isCorrect: true },
+    { text: "<span>", isCorrect: false }
     ]
 
 }
@@ -155,7 +155,7 @@ function myTimer() {
     if (sec < 0) {
         clearInterval(time); ``
         var initials = prompt("Time out!! Type your initials");
-        if (initials == null) {
+        if (initials === "") {
             document.getElementById("initialScore").innerHTML =
                 "Initials: none" + " Score: " + myScore;
         }
