@@ -155,13 +155,15 @@ function myTimer() {
     if (sec < 0) {
         clearInterval(time); ``
         var initials = prompt("Time out!! Type your initials");
-        if (initials === "") {
+        if (initials == "") {
             document.getElementById("initialScore").innerHTML =
                 "Initials: none" + " Score: " + myScore;
+
         }
         else {
             document.getElementById("initialScore").innerHTML =
                 "Initials: " + initials + " Score: " + myScore;
         }
+        localStorage.setItem(initials, myScore);
     }
 }

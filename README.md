@@ -1,4 +1,4 @@
-# timed-quiz
+# Nate-Johnson-s-timed-quiz-on-Javascript-basics
 
 # Module-4-Challenge-Nate-Johnson
 
@@ -7,15 +7,15 @@ For this assignment, I created a simple quiz with a few questions about Javascri
 
 
 ### Screenshot link
-![screenshot of deployed]https://github.com/codelearning2021/timed-quiz/blob/main/screenshot%20of%20the%20page.png
+![screenshot of deployed]https://github.com/codelearning2021/Nate-Johnson-s-timed-quiz-on-Javascript-basics/blob/main/screenshot%20of%20the%20page.png
 
 Relative Link: 
-(timed-quiz/blob/main/screenshot%20of%20the%20page.png)
+(Nate-Johnson-s-timed-quiz-on-Javascript-basics/blob/main/screenshot%20of%20the%20page.png)
 
 ### Link to deployed website
 
-https://codelearning2021.github.io/timed-quiz/
+https://codelearning2021.github.io/Nate-Johnson-s-timed-quiz-on-Javascript-basics/
 
 ### Link to Repo
 
-https://github.com/codelearning2021/timed-quiz
+https://github.com/codelearning2021/Nate-Johnson-s-timed-quiz-on-Javascript-basics
