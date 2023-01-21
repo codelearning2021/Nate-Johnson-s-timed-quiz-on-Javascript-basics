@@ -1,3 +1,18 @@
+// Start button variables
+var startContainer = document.querySelector(".start-container")
+var startBtn = document.querySelector(".start-btn")
+var panel = document.querySelector(".panel")
+
+startBtn.addEventListener("click", function () {
+    startContainer.classList.add("hide");
+    panel.classList.remove("hide");
+    var time = setInterval(() => myTimer(time), 1000);
+    if {
+        question.innerText == Questions[id].2;
+
+    }
+})
+
 // Questions will be asked
 const Questions = [{
     id: 0,
@@ -147,9 +162,8 @@ next.addEventListener("click", () => {
 // set up timer for quiz
 
 var sec = 60;
-var time = setInterval(myTimer, 1000);
 
-function myTimer() {
+function myTimer(time) {
     document.getElementById('timer').innerHTML = sec + " seconds left";
     sec--;
     if (sec < 0) {

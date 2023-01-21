@@ -93,3 +93,21 @@ body {
     color: white;
     background-color: #BF3325;
 }
+
+.hide {
+    display: none;
+}
+
+.start-container {
+    text-align: center;
+    padding-top: 1em;
+}
+
+.start-btn {
+    font-size: 4em;
+    background-color: green;
+}
+
+#timer {
+    font-size: 4em;
+}
