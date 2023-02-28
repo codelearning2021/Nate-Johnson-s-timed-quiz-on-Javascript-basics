@@ -2,6 +2,7 @@
 var startContainer = document.querySelector(".start-container")
 var startBtn = document.querySelector(".start-btn")
 var panel = document.querySelector(".panel")
+var hiScores = document.querySelector(".hiscore")
 
 // start button kicking off quiz
 startBtn.addEventListener("click", function () {
@@ -185,6 +186,49 @@ function myTimer(time) {
         }
         else document.getElementById("initialScore").innerHTML =
             "Initials: " + initials + " Score: " + myScore;
+
+        var userObj = {
+            name: initials,
+            score: myScore
+        }
+
+        var storage = JSON.parse(localStorage.getItem('quizHighscores'))
+        if (storage === null) {
+            storage = []
+        }
+
+        storage.push(userObj)
+
+        localStorage.setItem('quizHighscores', JSON.stringify(storage))
+        window.location.href = 'highscores.html'
     }
-    localStorage.setItem(initials, myScore);
+
 }
+
+
+let keys = Object.keys(localStorage);
+
+
+hiScores.addEventListener("click", function () {
+    window.location.href = "highscores.html"
+});
+
+// Display local storage high scores
+
+// hiscore.addEventListener("click", function () {
+//     startContainer.localScores.add("hide");
+//     hiScores.localScores.remove("hide");
+// }
+
+// function mostraPontos() {
+//         // pontos is an empty array if nothing has been stored yet.
+//         var pontos = JSON.parse(localStorage.pontosSalvos || '[]');
+//         var ol = document.getElementById("mensagem_pontos");
+//         ol.innerHTML = '';
+//         // Appends all the scores as list elements
+//         for (var i = 0; i < pontos.length; i++) {
+//             var li = document.createElement('li');
+//             li.textContent = pontos[i];
+//             ol.appendChild(li);
+//         }
+//     }
