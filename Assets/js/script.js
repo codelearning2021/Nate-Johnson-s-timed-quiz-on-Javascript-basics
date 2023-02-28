@@ -213,22 +213,3 @@ hiScores.addEventListener("click", function () {
     window.location.href = "highscores.html"
 });
 
-// Display local storage high scores
-
-// hiscore.addEventListener("click", function () {
-//     startContainer.localScores.add("hide");
-//     hiScores.localScores.remove("hide");
-// }
-
-// function mostraPontos() {
-//         // pontos is an empty array if nothing has been stored yet.
-//         var pontos = JSON.parse(localStorage.pontosSalvos || '[]');
-//         var ol = document.getElementById("mensagem_pontos");
-//         ol.innerHTML = '';
-//         // Appends all the scores as list elements
-//         for (var i = 0; i < pontos.length; i++) {
-//             var li = document.createElement('li');
-//             li.textContent = pontos[i];
-//             ol.appendChild(li);
-//         }
-//     }

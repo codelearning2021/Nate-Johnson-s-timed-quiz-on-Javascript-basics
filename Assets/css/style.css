@@ -111,3 +111,10 @@ body {
 #timer {
     font-size: 4em;
 }
+
+.hiscore {
+    margin: 0;
+    position: relative;
+    top: 25%;
+    left: 5%;
+  }
